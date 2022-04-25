@@ -8,11 +8,25 @@ public class CoreCompetency {
     private static int nextId = 1;
     private String value;
 
+    public int getId() {
+        return id;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    // constructor to set id
     public CoreCompetency() {
         this.id = nextId;
         nextId++;
     }
 
+    // constructor to assign new id number and also set the value of value
     public CoreCompetency(String value) {
         this();
         this.value = value;
